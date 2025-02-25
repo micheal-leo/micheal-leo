@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>个人简介 - 张三</title>
+    <style>
+        /* 基础样式 */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+
+        body {
+            background-color: #f5f5f5;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        /* 容器样式 */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* 头部区域 */
+        .header {
+            text-align: center;
+            padding: 40px 0;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            margin-bottom: 30px;
+        }
+
+        .avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid white;
+            margin-bottom: 15px;
+        }
+
+        /* 内容区块 */
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            margin-bottom: 25px;
+        }
+
+        h2 {
+            color: #3498db;
+            border-bottom: 2px solid #eee;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+
+        /* 技能标签 */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .skill-tag {
+            background: #e0f0ff;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.9em;
+        }
+
+        /* 时间轴样式 */
+        .timeline {
+            border-left: 2px solid #3498db;
+            padding-left: 25px;
+            margin-left: 10px;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+        }
+
+        .timeline-item::before {
+            content: "";
+            position: absolute;
+            left: -30px;
+            top: 5px;
+            width: 12px;
+            height: 12px;
+            background: #3498db;
+            border-radius: 50%;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 头部 -->
+    <div class="header">
+        <div class="container">
+            < img src="avatar.jpg" alt="头像" class="avatar">
+            <h1>张三</h1>
+            <p>全栈开发者 | 技术爱好者</p >
+        </div>
+    </div>
+
+    <div class="container">
+        <!-- 关于我 -->
+        <section class="section">
+            <h2>关于我</h2>
+            <p>🚀 5年全栈开发经验，精通JavaScript生态，热爱开源技术。持续关注Web3.0和AI领域发展，擅长将复杂技术转化为用户友好的解决方案。</p >
+        </section>
+
+        <!-- 技能 -->
+        <section class="section">
+            <h2>技术栈</h2>
+            <div class="skills">
+                <span class="skill-tag">JavaScript/TypeScript</span>
+                <span class="skill-tag">React/Vue</span>
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Docker</span>
+                <span class="skill-tag">AWS</span>
+            </div>
+        </section>
+
+        <!-- 经历 -->
+        <section class="section">
+            <h2>工作经历</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>ABC科技有限公司 (2019-至今)</h3>
+                    <p>• 主导开发公司核心SaaS平台<br>
+                       • 实现系统性能提升40%<br>
+                       • 团队技术培训与新人指导</p >
+                </div>
+                <div class="timeline-item">
+                    <h3>XYZ初创公司 (2017-2019)</h3>
+                    <p>• 从0到1搭建电商平台架构<br>
+                       • 实现日均百万级请求处理</p >
+                </div>
+            </div>
+        </section>
+
+        <!-- 联系方式 -->
+        <section class="section">
+            <h2>联系我</h2>
+            <p>📧 zhangsan@example.com<br>
+               💼 LinkedIn<br>
+               💻 </p >
+        </section>
+    </div>
+</body>
+</html>
